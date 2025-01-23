@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "slowly.py"
+version = "0.1.0"
+description = ""
+authors = ["tiagovla <tiagovla@gmail.com>"]
+readme = "README.md"
+packages = [{include = "slowly"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+aiohttp = "^3.11.11"
+uuid = "^1.30"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
