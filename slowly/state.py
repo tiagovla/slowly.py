@@ -12,7 +12,6 @@ class ConnectionState:
     def clear(self):
         self.client_user = None
         self._users = {}
-        self._teasers = {}
         self._messages = []
         gc.collect()
 
