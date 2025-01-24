@@ -179,7 +179,7 @@ class HTTPClient:
         if self.__session and self.__session.closed:
             self.__session = aiohttp.ClientSession(connector=self.connector)
 
-    def get_client_profile(self) -> Coroutine[Any, Any, dict[str, Any] | str]:
+    def fetch_client_profile(self) -> Coroutine[Any, Any, dict[str, Any] | str]:
         """
         Get the client's profile.
 
@@ -196,7 +196,7 @@ class HTTPClient:
         }
         return self.request(Route("POST", "web/me"), data=data)
 
-    def get_friends(
+    def fetch_friends(
         self, requests: int = 1, dob: bool = True
     ) -> Coroutine[Any, Any, dict[str, Any] | str]:
         """
@@ -231,7 +231,7 @@ class HTTPClient:
         params = {"token": self.token, "page": page}
         return self.request(Route("GET", f"friend/{friend_id}/all"), params=params)
 
-    async def auth_fetch_passcode(
+    async def fetch_auth_passcode(
         self, email: str
     ) -> Coroutine[Any, Any, dict[str, Any] | str]:
         """
@@ -246,7 +246,7 @@ class HTTPClient:
         data = {"email": email, "device": self.device, "checkpass": False}
         return self.request(Route("POST", "auth/email/passcode"), data=data)
 
-    async def auth_fetch_token(
+    async def fetch_auth_token(
         self, email: str, passcode: str
     ) -> Coroutine[Any, Any, dict[str, Any] | str]:
         """
