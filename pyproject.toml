@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "slowly.py"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["tiagovla <tiagovla@gmail.com>"]
 readme = "README.md"
