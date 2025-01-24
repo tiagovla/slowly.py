@@ -16,6 +16,7 @@ project = "slowly.py"
 copyright = "2025, tiagovla"
 author = "tiagovla"
 release = importlib.metadata.version("slowly.py")
+version = importlib.metadata.version("slowly.py")
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
