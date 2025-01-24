@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies using Poetry
         run: |
-          poetry install
+          poetry install --with docs
 
       - name: Generate documentation with Sphinx
         run: |
