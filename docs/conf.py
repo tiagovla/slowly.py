@@ -8,13 +8,14 @@
 
 import os
 import sys
+import importlib.metadata
 
 sys.path.insert(0, os.path.abspath("../"))
 
 project = "slowly.py"
 copyright = "2025, tiagovla"
 author = "tiagovla"
-release = "0.1.2"
+release = importlib.metadata.version("slowly.py")
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
