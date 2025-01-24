@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "slowly.py"
-version = "0.1.1"
-description = ""
+version = "0.1.2"
+description = "Unofficial asynchronous API/Client for Slowly."
 authors = ["tiagovla <tiagovla@gmail.com>"]
 readme = "README.md"
 packages = [{include = "slowly"}]
+license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.13"

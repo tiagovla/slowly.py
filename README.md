@@ -5,7 +5,7 @@
 
 # Slowly.py
 
-This project provides an **unofficial asynchronous API** for interacting with
+This project provides an **unofficial asynchronous API/Client** for interacting with
 the Slowly app. The Slowly app is a unique platform that connects people from
 around the world via pen-pal style letters.
 

@@ -1,6 +1,6 @@
 __title__ = "tinder"
 __author__ = "tiagovla"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __license__ = "GPL-3.0-or-later"
 
 import logging
